@@ -528,6 +528,33 @@ nav .fas
     .copyright{
         font-size: 14px;
     }
+
+    .header {
+        padding: 10px; /* Adjust padding for smaller screens */
+        width: 65%;
+      }
+    
+      .logo {
+        font-size: 20px; /* Decrease font size for the logo */
+      }
+    
+      .navbar {
+        display: none; /* Hide the navbar by default */
+        flex-direction: column; /* Stack navigation links vertically */
+        text-align: center; /* Center align the navigation links */
+        margin-top: 10px; /* Add some space between logo and nav links */
+      }
+    
+      .navbar a {
+        display: block; /* Ensure each link occupies full width */
+        padding: 10px 0; /* Add padding to each link */
+      }
+    
+      #menu-icon {
+        display: block; /* Display the menu icon */
+        left: 20px;
+      }
+
     .certificate-list {
         flex-direction: column; /* Stack certificates vertically */
       }
