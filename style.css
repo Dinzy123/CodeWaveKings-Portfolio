@@ -384,20 +384,80 @@ form .btn2
     height: 40px;
     animation: spin 2s linear infinite;
 }
+/* CSS for Certificates Section */
+.certificates {
+    background-color: #080808; /* Adjust the color to match the background color of the about section */
+    padding: 50px 0;
+  }
+  
+  
+  .certificate-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .certificate {
+    width: 48%; /* Adjust width as needed */
+    margin-bottom: 20px;
+  }
+  
+  .certificate img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .certificate-info {
+    padding: 20px;
+    background-color: #020101;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .certificate-info h2 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #15c1ec;
+  }
+  
+  .certificate-info p {
+    color: #faf4f4;
+  }
+  
+  .certificate {
+    position: relative;
+  }
+  
+  .certificate-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+  }
+  
+  .certificate-overlay a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #0011ff; /* Button background color */
+    border-radius: 5px;
+  }
+  
+  .certificate:hover .certificate-overlay {
+    opacity: 1; /* Show overlay on hover */
+  }
+  
+  
+  
 
-
-/*** About ***/
-/*
-#about .years .display-1 {
-    font-size: 10rem;
-    line-height: 9rem;
-}
-
-#about .years h5 {
-    letter-spacing: 30px;
-    margin-right: -30px;
-}
-*/
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
@@ -412,12 +472,11 @@ nav .fas
 
 @media only screen and (max-width: 600px)
 {
-    #header {
-        background-image: url(Pictures/background.jpg);
-    }
-    .header-text{
-        margin-top: 100%;
+    
+    .header{
+        margin-top: none;
         font-size: 16px;
+        width: 100%;
     }
     .header-text h1{
         font-size: 30px;
