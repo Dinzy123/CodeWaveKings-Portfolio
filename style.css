@@ -528,6 +528,14 @@ nav .fas
     .copyright{
         font-size: 14px;
     }
+    .certificate-list {
+        flex-direction: column; /* Stack certificates vertically */
+      }
+    
+      .certificate {
+        width: 100%; /* Occupy full width */
+        margin-bottom: 20px; /* Adjust spacing between certificates */
+      }
 }
 #msg
 {
