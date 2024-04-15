@@ -539,7 +539,7 @@ nav .fas
       }
     
       .navbar {
-        display: none; /* Hide the navbar by default */
+        display: inline; /* Hide the navbar by default */
         flex-direction: column; /* Stack navigation links vertically */
         text-align: center; /* Center align the navigation links */
         margin-top: 10px; /* Add some space between logo and nav links */
