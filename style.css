@@ -4,14 +4,11 @@
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
 }
-html
-{
-        scroll-behavior: smooth;
+html, body {
+    max-width: 100%; /* Ensures the layout doesn't overflow */
 }
-body 
-{
-    background: #080808;
-    color: #fff;
+body {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 #header 
 {
@@ -481,6 +478,7 @@ nav .fas
     .header-text h1{
         font-size: 30px;
     }
+
     navbar{
     display: block;
     font-size: 25px;
@@ -490,7 +488,7 @@ nav .fas
         position: fixed;
         top: 0;
         right: -200px;
-        width: 150px;
+        width: 100%;
         height: 60vh;
         padding-top: 50px;
         z-index: 2;
@@ -531,19 +529,14 @@ nav .fas
 
     .header {
         padding: 10px; /* Adjust padding for smaller screens */
-        width: 65%;
+        width: 100%;
       }
     
       .logo {
         font-size: 20px; /* Decrease font size for the logo */
       }
     
-      .navbar {
-        display: inline; /* Hide the navbar by default */
-        flex-direction: column; /* Stack navigation links vertically */
-        text-align: center; /* Center align the navigation links */
-        margin-top: 10px; /* Add some space between logo and nav links */
-      }
+   
     
       .navbar a {
         display: block; /* Ensure each link occupies full width */
