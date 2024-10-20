@@ -383,7 +383,7 @@ form .btn2
 }
 /* CSS for Certificates Section */
 .certificates {
-    background-color: #080808; /* Adjust the color to match the background color of the about section */
+   color: #333;
     padding: 50px 0;
   }
   
@@ -406,7 +406,7 @@ form .btn2
   
   .certificate-info {
     padding: 20px;
-    background-color: #020101;
+    color: #333;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
