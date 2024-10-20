@@ -10,19 +10,12 @@ html, body {
 body {
     overflow-x: hidden; /* Prevents horizontal scrolling */
 }
-#header 
-{
-    height: 100vh;
-    background-image: url("Pictures//background.jpg");
-    background-size: cover;
-    background-position: center;
 
-}
 .container 
 {
     padding: 5px 10%;
 }
-nav 
+.navbar 
 {
     display: flex;
     align-items: center;
@@ -31,26 +24,26 @@ nav
 }
 .logo
 {
-    width: 140px;
+    width: 100px;
 }
 
-nav ul li 
+.navbar ul li 
 {
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: 5px 10px;
 
 }
 
-nav ul li a
+.navbar ul li a
 {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 15px;
     position: relative;
 }   
 
-nav ul li a::after{
+.navbar ul li a::after{
     content: '';
     width: 0;
     height: 3px;
@@ -61,24 +54,11 @@ nav ul li a::after{
     transition: 0.5s;
 }
 
-nav ul li a:hover::after 
+.navbar ul li a:hover::after 
 {
     width: 100%;
 }
-.header-text
-{
-    margin-top: 20%;
-    font-size: 25px;
-}
-.header-text h1
-{
-    font-size: 50px;
-    margin-top: 20px;
-}
-.header-text h1 span
-{
-    color: darkblue;
-}
+
 /*---------------About---------------*/
 #about
 {
@@ -145,7 +125,7 @@ nav ul li a:hover::after
 }
 .tab-contents ul li span
 {
-    color: rgb(42, 0, 139);
+    color: rgb(73, 62, 233);
     font-size: 14px;
 }
 .tab-contents
@@ -383,7 +363,7 @@ form .btn2
 }
 /* CSS for Certificates Section */
 .certificates {
-   color: #333;
+    color: #333;
     padding: 50px 0;
   }
   
@@ -541,9 +521,7 @@ nav .fas
       .logo {
         font-size: 20px; /* Decrease font size for the logo */
       }
-    
-   
-    
+
       .navbar a {
         display: block; /* Ensure each link occupies full width */
         padding: 10px 0; /* Add padding to each link */
