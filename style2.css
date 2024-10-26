@@ -1,0 +1,96 @@
+/* CSS for Experience Section */
+#skill {
+    padding-top: 80px; /* Adjust as needed */
+}
+
+.display-5 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333; /* Adjust text color */
+    animation: fadeInDown 1s ease-out; /* Animation for fading in */
+}
+
+/* Animation for fading in */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.mb-5 {
+    margin-bottom: 3rem !important; /* Adjust margin as needed */
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important; /* Adjust margin as needed */
+}
+
+.skill {
+    margin-bottom: 2rem;
+    opacity: 0; /* Initially hidden */
+    animation: slideInRight 1s forwards; /* Animation for sliding in */
+}
+
+/* Animation for sliding in */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.skill:nth-child(odd) {
+    animation-delay: 0.5s; /* Delay alternate items for staggered animation */
+}
+
+.skill:nth-child(even) {
+    animation-delay: 1s; /* Delay alternate items for staggered animation */
+}
+
+.skill h6 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333; /* Adjust text color */
+}
+
+.progress {
+    height: 20px; /* Adjust progress bar height */
+}
+
+/* Customize progress bar colors */
+.progress-bar {
+    transition: width 1s ease; /* Add animation to progress bars */
+}
+
+/* Adjust padding for tab content */
+.tab-content {
+    padding: 1rem 0;
+}
+
+/* Style tab content */
+.tab-pane h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333; /* Adjust text color */
+    margin-bottom: 0.5rem;
+}
+
+.tab-pane p {
+    font-size: 1rem;
+    color: #666; /* Adjust text color */
+}
+
+.tab-pane hr {
+    margin: 1rem 0;
+    border-color: #007bff; /* Adjust border color */
+}
