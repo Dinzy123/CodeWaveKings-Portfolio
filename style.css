@@ -60,7 +60,11 @@ body {
 }
 
 /*---------------About---------------*/
-
+#about
+{
+    padding: 80px 0;
+    color: #ababab;
+}
 /* Align button below the picture */
 .about-col-1 img {
     max-width: 100%;
