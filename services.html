@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
 
-      <!-- ==========================================
-                  Box Icons
+    <!-- ==========================================
+                Box Icons
     =========================================== -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
     <!-- ==========================================
-                  Custom CSS
+                Custom CSS
     =========================================== -->
     <link rel="stylesheet" href="css/style1.css" />
     <!-- ==========================================
-                  Breakpoint
+                Breakpoint
     =========================================== -->
     <link rel="stylesheet" href="css/breakpoint.css" />
 
@@ -64,7 +64,9 @@
         </nav>
     </header>
 
+
    <!-----------services------------------------->
+
    <div id="services">
     <div class="container">
         <h1 class="sub-title">My Services</h1>
@@ -72,25 +74,51 @@
             <div>
                 <i class="fa-solid fa-code"></i>
                 <h2>Web Design</h2>
-                <p>I'm developing websites using a moden HTML5 and CSS, also make buttons work
-                    using JavaScript. I create good and well functioning websites that you can
-                    use for your company to generate income.
+                <p>I create modern, responsive websites using HTML5, CSS, and JavaScript. 
+                    My designs are functional, visually appealing, and can help your company 
+                    generate income.
                 </p>
                 <a href="#">Learn more</a>
             </div>
             <div>
                 <i class="fa-solid fa-crop-simple"></i>
                 <h2>UI Design</h2>
-                <p>I'm designing User Interface (UI) which is a crucial aspect of creating digital products, such as websites, mobile apps, software applications, and even hardware devices with digital interfaces. UI design focuses on crafting the visual elements and user interactions that make these products user-friendly, aesthetically pleasing, and functional.
+                <p>I design user-friendly and visually appealing interfaces for websites, apps, 
+                    and software, ensuring seamless user interaction and a great experience.
                 </p>
-                <a href="#">learn more</a>
+                <a href="#">Learn more</a>
             </div>
             <div>
                 <i class="fa-brands fa-app-store"></i>
                 <h2>App Design</h2>
-                <p>I'm a developer specializing in App Design i'm creative and technically skilled professionalist who combines expertise in software development with a deep understanding of user interface (UI) and user experience (UX) design principles. I excel in translating user needs and business requirements into visually appealing, user-friendly, and functional mobile or web applications.
+                <p>I specialize in designing creative and functional apps, blending technical skills 
+                    with UI/UX principles to deliver user-friendly mobile and web applications.
                 </p>
-                <a href="#">learn more</a>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-layer-group"></i>
+                <h2>Graphic Design</h2>
+                <p>I create compelling visual designs for branding, marketing, and digital products, 
+                    enhancing user engagement and brand identity.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Database Management</h2>
+                <p>I design and manage secure, scalable databases to optimize data storage, retrieval, 
+                    and processing for your applications.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-shield-alt"></i>
+                <h2>Cybersecurity</h2>
+                <p>I ensure the security of your digital assets by implementing advanced cybersecurity 
+                    measures and protocols.
+                </p>
+                <a href="#">Learn more</a>
             </div>
         </div>
     </div>
@@ -123,55 +151,5 @@
                     Custom Js
       =========================================== -->
       <script src="home.js"></script>
-
-
-
-    <script>
-
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        function opentab(tabname){
-            for(tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-
-    </script>
-
-    <script>
-
-        var sidemen = document.getElementById("sidemenu");
-
-        function openmenu(){
-            sidemen.style.right = "0";
-        }
-        function closemenu(){
-            sidemen.style.right = "-200px";
-        }
-
-    </script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyIdntLa7V2PJ-Dn6TDGzQswMeUG8ba7GdEZbycDIfvYlc9y0BLF9wG77jeAwFxUtfd/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Message Sent Successfully"
-                setTimeout(function(){
-                    msg.innerHTML = ""
-                },5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
 </body>
 </html>
