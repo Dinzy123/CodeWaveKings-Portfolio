@@ -182,35 +182,37 @@ body {
     transform: translateY(-10px);
 }
 /*------------portfolio-------------------*/
-#portfolio {
+
+#portfolio
+{
     padding: 50px 0;
-    background-color: #f9f9f9; /* Added background color for better contrast */
 }
-.work-list {
+.work-list
+{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjusted min-width for better responsiveness */
-    grid-gap: 30px; /* Reduced gap for a tighter layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
     margin-top: 50px;
-    padding: 0 20px; /* Added padding for better spacing */
 }
-.work {
-    border-radius: 12px; /* Slightly increased rounding for a modern look */
+.work
+{
+    border-radius: 10px;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
-    transition: transform 0.3s, box-shadow 0.3s;
 }
-.work img {
+.work img
+{
     width: 100%;
-    border-radius: 12px;
+    border-radius: 10px;
     display: block;
     transition: transform 0.5s;
 }
-.layer {
+.layer
+{
     width: 100%;
     height: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(79, 10, 168, 0.9)); /* Enhanced gradient effect */
-    border-radius: 12px;
+    background: linear-gradient(rgba(0,0,0,0.6), #4f0aa8);
+    border-radius: 10px;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -219,64 +221,54 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 20px; /* Added padding for better content spacing */
+    padding: 0 40px;
     text-align: center;
-    font-size: 15px; /* Slightly increased font size */
-    transition: height 0.4s ease-in-out;
+    font-size: 14px;
+    transition: height 0.5s;
 }
-.layer h3 {
-    font-weight: 600; /* Increased font weight for emphasis */
-    color: #fff; /* Ensured text contrast */
-    margin-bottom: 15px;
+.layer h3
+{
+    font-weight: 500;
+    margin-bottom: 20px;
 }
-.layer p {
-    color: #e0e0e0; /* Adjusted text color for readability */
-}
-.layer a {
+.layer a
+{
     margin-top: 20px;
     color: #ff004f;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 60px;
     background: white;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     text-align: center;
-    transition: transform 0.3s, background-color 0.3s;
 }
-.layer a:hover {
-    transform: scale(1.1); /* Added hover effect */
-    background-color: #f1f1f1; /* Subtle background change */
-}
-.work:hover {
-    transform: translateY(-5px); /* Added lift effect on hover */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
-}
-.work:hover img {
+.work:hover img
+{
     transform: scale(1.1);
 }
-.work:hover .layer {
+.work:hover .layer
+{
     height: 100%;
 }
-.btn {
+.btn
+{
     display: block;
     margin: 50px auto;
     width: fit-content;
     border: none;
     padding: 14px 50px;
-    border-radius: 8px; /* Slightly rounded button corners */
+    border-radius: 6px;
     text-decoration: none;
     color: white;
-    background: #4f0aa8; /* Made button color consistent with portfolio */
-    font-size: 16px;
-    font-weight: bold;
-    transition: background 0.3s, transform 0.3s;
+    transition: background 0.5s;
 }
-.btn:hover {
+.btn:hover
+{
     background: #1900ff;
-    transform: translateY(-3px); /* Added lift effect */
-}
+    
+}he
 
 
 /*--------------------Contact------------------*/
