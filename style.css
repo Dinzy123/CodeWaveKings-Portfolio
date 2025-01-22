@@ -184,7 +184,7 @@ body {
 /*------------portfolio-------------------*/
 #portfolio {
     padding: 50px 0;
-   
+    background-color: #f9f9f9; /* Added background color for better contrast */
 }
 .work-list {
     display: grid;
