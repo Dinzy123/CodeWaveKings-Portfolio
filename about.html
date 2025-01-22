@@ -70,7 +70,7 @@
         <div class="row">
             <div class="about-col-1" style="margin-top: 100px;">
                 <img src="Pictures//AboutPic.jpg" alt="About Me Picture">
-                <a href="certificates.html" download class="btn btn2">Certificates</a>
+                <a href="certificates.html" class="btn btn2">Certificates</a>
             </div>
             <div class="about-col-2">
                 <h1 class="animate__animated animate__rubberBand sub-title">About Me</h1>
@@ -80,7 +80,7 @@
                     in backend development, frontend design, and database management. My experience includes creating 
                     responsive web applications, optimizing backend operations, and ensuring high-quality code through 
                     rigorous testing and debugging.
-                    
+
                     As a recent intern at DUT App Factory, I had the privilege of contributing to impactful projects, 
                     collaborating with experienced teams, and refining my skills in ASP.NET, Firebase, and Azure. I have 
                     also mentored students in programming, helping them excel in languages like Java, C#, HTML, and CSS, 
@@ -188,23 +188,5 @@
         }
 
     </script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyIdntLa7V2PJ-Dn6TDGzQswMeUG8ba7GdEZbycDIfvYlc9y0BLF9wG77jeAwFxUtfd/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Message Sent Successfully"
-                setTimeout(function(){
-                    msg.innerHTML = ""
-                },5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
 </body>
 </html>
