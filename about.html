@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+
+      <!-- ==========================================
+                  Box Icons
+    =========================================== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- ==========================================
+                  Custom CSS
+    =========================================== -->
+    <link rel="stylesheet" href="css/style1.css" />
+    <!-- ==========================================
+                  Breakpoint
+    =========================================== -->
+    <link rel="stylesheet" href="css/breakpoint.css" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/01af3ad61e.js" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+
+     <!-- ==========================================
+                    Header
+    =========================================== -->
+    <header class="header">
+        <a href="#" class="logo">CodeWave<span>Kings.</span></a>
+    
+        <i class="bx bx-menu" id="menu-icon"></i>
+    
+        <nav class="navbar">
+          <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="https://forms.visme.co/formsPlayer/90x130e8-industry-whitepaper-download">Hire Me!</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+    </header>
+    
+    
+    <!-- ==========================================
+                  Home Section
+    =========================================== -->
+    <section class="home" id="home">
+        <div class="home-content">
+          <h3>Hello, It's Me</h3>
+          <h1>Sanele Mkhabela</h1>
+          <h3>And I'm a <span class="multiple-text"></span></h3>
+          <div class="social-media">
+            <a href="https://www.facebook.com/"><i class="bx bxl-facebook"></i></a>
+            <a href=""><i class="bx bxl-twitter"></i></a>
+            <a href=""><i class="bx bxl-instagram-alt"></i></a>
+            <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"><i class="bx bxl-linkedin"></i></a>
+          </div>
+          <!-- add link for your CV into `href` -->
+          <a href="https://my.visme.co/view/x4vqr1w0-new-project" class="btn">View CV</a>
+        </div>
+  
+        <div class="home-img">
+          <img src="Pictures/MyPics/profile.jpg" alt="home" />
+        </div>
+      </section>
+      
+   <!-----------About------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Pictures//AboutPic.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="animate__animated animate__rubberBand" class="sub-title">About Me</h1>
+                    <p>
+                        I'm currently a Third-year student at Mangosuthu University Of Technology, 
+                        pursuing a Diploma in Software Development. My passion for coding has been a 
+                        lifelong interest, and I'm particularly drawn to unraveling the intricacies 
+                        of user interfaces and graphics presented on webpages. Coding has been a dream 
+                        of mine since my childhood, and I have been actively pursuing it.
+
+                        My primary area of expertise lies in web development, where I specialize in creating
+                        websites using HTML, CSS, and JavaScript. In addition to my web development skills, 
+                        I also possess a strong foundation in programming languages such as Java and C#.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>CodeWave</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2021 - current</span><br>Design training at w3Schools and Cousera</li>
+                            <li><span>2022 - 2022</span><br>Creates my first Portfolio website</li>
+                            <li><span>2022</span><br>Design My first login page using Java and C#</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2022</span><br>Entered At MUT to do Information Technology(Software Development)</li>
+                            <li><span>2023</span><br>Done DataBase Using SQL Serve and Derby</li>
+                            <li><span>2024</span><br>Certificate in Mentoring IT Students</li>
+                            <li><span>2024</span><br>Recieved Certificate in Java and Android App Development</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   <!-- ==========================================
+                    Footer
+    =========================================== -->
+    <footer class="footer">
+        <div class="footer-text">
+          <p>Copyright &copy; 2022 by CodeWaveKings | All Rights Reserved.</p>
+        </div>
+  
+        <div class="footer-iconTop">
+          <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+      </footer>
+  
+      <!-- ==========================================
+                    Scroll Reveal
+      =========================================== -->
+      <script src="https://unpkg.com/scrollreveal"></script>
+  
+      <!-- ==========================================
+                     Typed Js
+      =========================================== -->
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  
+      <!-- ==========================================
+                    Custom Js
+      =========================================== -->
+      <script src="home.js"></script>
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemen = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemen.style.right = "0";
+        }
+        function closemenu(){
+            sidemen.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyIdntLa7V2PJ-Dn6TDGzQswMeUG8ba7GdEZbycDIfvYlc9y0BLF9wG77jeAwFxUtfd/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
