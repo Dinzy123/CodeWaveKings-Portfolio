@@ -5,53 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
 
-    <!-- ==========================================
-                Box Icons
-    =========================================== -->
+    <!-- Stylesheets and Fonts -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <!-- ==========================================
-                Custom CSS
-    =========================================== -->
     <link rel="stylesheet" href="css/style1.css" />
-    <!-- ==========================================
-                Breakpoint
-    =========================================== -->
     <link rel="stylesheet" href="css/breakpoint.css" />
-
-    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
-
-    <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/01af3ad61e.js" crossorigin="anonymous"></script>
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+        .filter-btns {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .filter-btns button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+            background-color: #333;
+            color: white;
+            border-radius: 5px;
+        }
+        .filter-btns button:hover {
+            background-color: #555;
+        }
+        .work-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .work {
+            display: none; /* Hidden by default, shown by JavaScript */
+            width: 300px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .work img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .work.active {
+            display: block;
+        }
+    </style>
 </head>
 <body>
-
-     <!-- ==========================================
-                    Header
-    =========================================== -->
+    <!-- Header -->
     <header class="header">
         <a href="#" class="logo">CodeWave<span>Kings.</span></a>
-    
         <i class="bx bx-menu" id="menu-icon"></i>
-    
         <nav class="navbar">
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -64,160 +79,84 @@
         </nav>
     </header>
 
-    <!-----------------------Portfolio------------------------------>
+    <!-- Portfolio Section -->
     <div id="portfolio">
         <div class="container">
             <h1 class="sub-title">My Projects</h1>
+
+            <!-- Filter Buttons -->
+            <div class="filter-btns">
+                <button onclick="filterProjects('all')">All</button>
+                <button onclick="filterProjects('mobile')">Mobile</button>
+                <button onclick="filterProjects('website')">Websites</button>
+            </div>
+
+            <!-- Work List -->
             <div class="work-list">
-                <div class="work">
-                    <img src="Pictures/Calculator.png" height="300px">
+                <!-- Mobile Projects -->
+                <div class="work mobile">
+                    <img src="Pictures/AndroidAppPicture.jpg" alt="Android App">
+                    <div class="layer">
+                        <h3>Android Applications (OIBSIP-Short Course)</h3>
+                        <p>I make cool Android apps using Java and Kotlin. My apps look good and work well.</p>
+                        <a href="https://github.com/Dinzy123/OIBSIP"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work mobile">
+                    <img src="Pictures/AndroidAppPicture.jpg" alt="Android App">
+                    <div class="layer">
+                        <h3>Android Applications (CODESOFT-Short Course)</h3>
+                        <p>I make cool Android apps using Java and Kotlin. My apps look good and work well.</p>
+                        <a href="https://github.com/Dinzy123/CODESOFT"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- Website Projects -->
+                <div class="work website">
+                    <img src="Pictures/Calculator.png" alt="Calculator Web">
                     <div class="layer">
                         <h3>Calculator Web</h3>
-                        <p>Check out this cool calculator website i've 
-                            designed using HTML, JavaScript and CSS,
-                            this is a cool designed calculator web. 
-                            It's responsive and does all math calculations.
-                        </p>
+                        <p>Check out this cool calculator website designed using HTML, JavaScript, and CSS.</p>
                         <a href="https://dinzy123.github.io/Calculator_Web/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="Pictures//VarsityDrive.png" height="300px">
-                    <div class="layer">
-                        <h3>Varsity Drive</h3>
-                        <p>Varsity Drive is an App that me and team members are still
-                            working on and it's basically for varsity students who will
-                            be using it for save travel and better ride experience with
-                            student discounts.
-                        </p>
-                        <a href="https://github.com/Dinzy123"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="Pictures//other.jpg" height="300px">
-                    <div class="layer">
-                        <h3>Other Apps</h3>
-                        <p>I'm still working on other projects that will also be
-                            posted here on my portfolio website and i'm still 
-                            improving my coding skills by engaging into Hackathons
-                            and taking short courses on internet.
-                        </p>
-                        <a href="https://github.com/Dinzy123"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                    <!-------------------------------------Other added ones-------------------------------------->
-                  <div class="work">
-                    <img src="Pictures/AndroidAppPicture.jpg" height="300px">
-                    <div class="layer">
-                        <h3>Android Applications (OIBSIP-Short Course)</h3>
-                        <p style="font-size: smaller;">I make cool Android apps using Java and Kotlin. My apps 
-                            look good and work well. Whether it's making tools for 
-                            getting stuff done, apps for talking to friends, or fun games 
-                            to play, I make them easy to use and enjoy. I'm all about making 
-                            sure my apps work smoothly and people like using them. Let's work 
-                            together to make your idea into a great Android app!
-                        </p>
-                        <a href="https://github.com/Dinzy123/OIBSIP"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                  </div>
-
-                  <div class="work">
-                    <img src="Pictures/AndroidAppPicture.jpg" height="300px">
-                    <div class="layer">
-                        <h3>Android Applications (CODESOFT-Short Course)</h3>
-                        <p style="font-size: smaller;">I make cool Android apps using Java and Kotlin. My apps 
-                            look good and work well. Whether it's making tools for 
-                            getting stuff done, apps for talking to friends, or fun games 
-                            to play, I make them easy to use and enjoy. I'm all about making 
-                            sure my apps work smoothly and people like using them. Let's work 
-                            together to make your idea into a great Android app!
-                        </p>
-                        <a href="https://github.com/Dinzy123/CODESOFT"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                  </div>
-
-                    <div class="work">
-                    <img src="Pictures/Watch.png" height="300px">
-                    <div class="layer">
-                        <h3>Seameless Watch</h3>
-                        <p>I developed a basic timepiece that enables seamless transition 
-                            between analog and digital displays, allowing users to view the 
-                            real-time. This project was crafted using HTML, CSS, and JavaScript.
-                        </p>
-                        <a href="https://dinzy123.github.io/Digital-AnalogWatch/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                    </div>
-
-                <div class="work">
-                    <img src="Pictures/MbamboRentals-Pic.png" height="300px">
+                <div class="work website">
+                    <img src="Pictures/MbamboRentals-Pic.png" alt="Mbambo Rentals">
                     <div class="layer">
                         <h3>MbamboRentals</h3>
-                        <p style="font-size: smaller;">I designed and developed a website for MbamboRentals, 
-                            a company specializing in tents, sound systems, and catering services. 
-                            Users can navigate through the website to rent tents, sound systems, 
-                            and other services.
-                        </p>
+                        <p>Website for MbamboRentals, specializing in tents, sound systems, and catering services.</p>
                         <a href="https://dinzy123.github.io/MbamboRentals.github.io/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-
-                <div class="work">
-                  <img src="Pictures/LocalCrimeEyeApp.jpg" height="300px">
-                  <div class="layer">
-                      <h3>Local Crime Eye</h3>
-                      <p style="font-size: smaller;">As part of the Unicoders team, my colleague and I designed and 
-                        developed an innovative application aimed at empowering local communities to report crimes 
-                        swiftly and effectively. The app allows users to instantly alert forum members about criminal
-                        activities in their area, ensuring quicker responses and timely assistance.</p>
-                      <a href="https://github.com/Dinzy123/LocalCrimeEyeApp"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                  </div>
-              </div>
-
-              <div class="work">
-                <img src="Pictures/MyPics/forumCrimeEyeApp.jpg" height="300px">
-                <div class="layer">
-                    <h3>Forum Crime Eye</h3>
-                    <p style="font-size: smaller;">As part of the Unicoders team, my colleague and I designed and 
-                      developed an innovative application aimed at empowering local communities to report crimes 
-                      swiftly and effectively. The app allows users to instantly alert forum members about criminal
-                      activities in their area, ensuring quicker responses and timely assistance.</p>
-                    <a href="https://dinzy123.github.io/MbamboRentals.github.io/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
             </div>
-
-                <br>
-                <a href="https://forms.visme.co/formsPlayer/90x130e8-industry-whitepaper-download"  class="btn" onclick="openForm()">Hire Me!</a>
-                <br>
         </div>
     </div>
-    <br>
-    
-   <!-- ==========================================
-                    Footer
-    =========================================== -->
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer-text">
           <p>Copyright &copy; 2022 by CodeWaveKings | All Rights Reserved.</p>
         </div>
-  
         <div class="footer-iconTop">
           <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
         </div>
-      </footer>
-  
-      <!-- ==========================================
-                    Scroll Reveal
-      =========================================== -->
-      <script src="https://unpkg.com/scrollreveal"></script>
-  
-      <!-- ==========================================
-                     Typed Js
-      =========================================== -->
-      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  
-      <!-- ==========================================
-                    Custom Js
-      =========================================== -->
-      <script src="home.js"></script>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function filterProjects(category) {
+            const works = document.querySelectorAll('.work');
+            works.forEach(work => {
+                if (category === 'all' || work.classList.contains(category)) {
+                    work.classList.add('active');
+                } else {
+                    work.classList.remove('active');
+                }
+            });
+        }
+
+        // Show all projects on load
+        filterProjects('all');
+    </script>
 </body>
 </html>
