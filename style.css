@@ -363,6 +363,7 @@ form .btn2
     height: 40px;
     animation: spin 2s linear infinite;
 }
+
 /* CSS for Certificates Section */
 .certificates {
     color: #333;
@@ -436,6 +437,12 @@ form .btn2
   
   
   
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 
 @keyframes spin {
     0% { transform: rotate(0deg); }

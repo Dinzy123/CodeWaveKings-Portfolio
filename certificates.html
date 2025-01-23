@@ -3,211 +3,258 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificates</title>
+    <title>Personal Portfolio Website</title>
 
-    <!-- Box Icons -->
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-
-    <!-- Custom CSS -->
+      <!-- ==========================================
+                  Box Icons
+    =========================================== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- ==========================================
+                  Custom CSS
+    =========================================== -->
     <link rel="stylesheet" href="css/style1.css" />
+    <!-- ==========================================
+                  Breakpoint
+    =========================================== -->
+    <link rel="stylesheet" href="css/breakpoint.css" />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
 
-    <!-- Font Awesome -->
+    <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Animation -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <style>
-        body {
-            font-family: 'Open Sans', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #333;
-            color: #333;
-        }
-
-        .certificates {
-            color: #333;
-            padding: 50px 0;
-          }
-
-        .header {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-        }
-
-        .header a {
-            color: #fff;
-            font-size: 1.2rem;
-            font-weight: 600;
-            text-decoration: none;
-        }
-
-        .header a:hover {
-            color: #ffdd40;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        .sub-title {
-            text-align: center;
-            font-size: 2rem;
-            color: #333;
-            margin-bottom: 1rem;
-        }
-
-        .certificate-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .certificate {
-            background: #333;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            text-align: center;
-            transition: transform 0.3s;
-        }
-
-        .certificate:hover {
-            transform: translateY(-10px);
-        }
-
-        .certificate img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .certificate-info {
-            padding: 1rem;
-        }
-
-        .certificate-info h2 {
-            font-size: 1.5rem;
-            color: #007bff;
-            margin-bottom: 0.5rem;
-        }
-
-        .certificate-info p {
-            font-size: 0.9rem;
-            color: #555;
-            line-height: 1.5;
-        }
-
-        .certificate-overlay a {
-            display: inline-block;
-            margin-top: 1rem;
-            padding: 0.5rem 1rem;
-            background: #007bff;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 4px;
-            transition: background 0.3s;
-        }
-
-        .certificate-overlay a:hover {
-            background: #0056b3;
-        }
-
-        .back-home {
-            text-align: center;
-            margin-top: 2rem;
-        }
-
-        .back-home a {
-            display: inline-block;
-            padding: 0.8rem 2rem;
-            background: #007bff;
-            color: #fff;
-            text-decoration: none;
-            font-size: 1rem;
-            font-weight: bold;
-            border-radius: 4px;
-            transition: background 0.3s;
-        }
-
-        .back-home a:hover {
-            background: #0056b3;
-        }
-
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
-        }
-
-        footer p {
-            margin: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/01af3ad61e.js" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
 
-    <!-- Header -->
+     <!-- ==========================================
+                    Header
+    =========================================== -->
     <header class="header">
-        <a href="index.html">&#8592; Back Home</a>
+        <a href="#" class="logo">CodeWave<span>Kings.</span></a>
+    
+        <i class="bx bx-menu" id="menu-icon"></i>
+    
+        <nav class="navbar">
+          <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="https://forms.visme.co/formsPlayer/90x130e8-industry-whitepaper-download">Hire Me!</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
     </header>
+    
 
-    <!-- Certificates Section -->
-    <section class="certificates">
-        <div class="container">
-            <h1 class="sub-title">Certificates</h1>
-            <div class="certificate-list">
-                <!-- Certificate 1 -->
-                <div class="certificate">
-                    <img src="Certificates/AndroidApp.png" alt="Certificate 1">
-                    <div class="certificate-info">
-                        <h2>Android App Development</h2>
-                        <p>The Android App Development certificate from OISIS-INFORBYTE signifies proficiency in creating Android applications.</p>
-                        <div class="certificate-overlay">
-                            <a href="https://drive.google.com/file/d/1wVATr5wr2f_pz184KOO0QAUOENLNU-hH/preview" target="_blank">View Certificate</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Certificate 2 -->
-                <div class="certificate">
-                    <img src="Certificates/Mentorship2.jpg" alt="Certificate 2">
-                    <div class="certificate-info">
-                        <h2>Student Peer Mentorship</h2>
-                        <p>Recognizes participation in a program designed to support and guide students in their journey through the field of IT.</p>
-                        <div class="certificate-overlay">
-                            <a href="https://drive.google.com/file/d/1n6qar_LgJlbxgLopvnI5GwCeOX8baSkk/view?usp=sharing" target="_blank">View Certificate</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Additional Certificates -->
-                <!-- Add similar structure for other certificates here -->
+  <!-- Certificates Section -->
+<section class="certificates" id="certificates">
+    <div class="container">
+      <h1 class="sub-title">Certificates</h1>
+      <div class="certificate-list">
+        <div class="row">
+          <!-- Certificate 1 -->
+          <div class="certificate">
+            <div class="certificate-overlay">
+              <a href="https://drive.google.com/file/d/1wVATr5wr2f_pz184KOO0QAUOENLNU-hH/preview" target="_blank">View Certificate</a>
             </div>
+            <img src="Certificates/AndroidApp.png" alt="Certificate 1">
+            <div class="certificate-info">
+              <h2>Android App Development</h2>
+              <p>The Android App Development certificate from OISIS-INFORBYTE 
+                signifies proficiency in creating Android applications. 
+                It validates expertise in developing mobile apps using Java and Kotlin, 
+                covering essential topics such as UI design, data management, 
+                user interaction, and app deployment.</p>
+              <!-- Additional certificate information here -->
+            </div>
+          </div>
+          
+          
+          <!-- Certificate 2 -->
+          <div class="certificate">
+            <div class="certificate-overlay">
+              <a href="https://drive.google.com/file/d/1n6qar_LgJlbxgLopvnI5GwCeOX8baSkk/view?usp=sharing" target="_blank">View Certificate</a>
+            </div>
+            <img src="Certificates/Mentorship2.jpg" alt="Certificate 2">
+            <div class="certificate-info">
+              <h2>Student peer Mentorship </h2>
+              <p>The Student Peer Mentorship of IT certificate from MUT
+                recognizes participation in a program designed to support and guide students in 
+                their journey through the field of IT. It involves providing mentorship, 
+                sharing knowledge, and offering assistance to peers to enhance their learning experience and 
+                academic success in IT-related subjects.</p>
+              <!-- Additional certificate information here -->
+            </div>
+          </div>
         </div>
-    </section>
+        <div class="row">
+          <!-- Certificate 3 -->
+          <div class="certificate">
+            <div class="certificate-overlay">
+              <a
+               href="https://dtmvamahs40ux.cloudfront.net/ComplementaryCourseCertificate/4398811/original/Sanele_Mlondi_Mkhabela20240325-76-1tqdzj3.jpg" target="_blank">View Certificate</a>
+            </div>
+            <img src="Certificates/Java.jpg" alt="Certificate 1">
+            <div class="certificate-info">
+              <h2>Java Programming</h2>
+              <p>Great Learning certificate signifies successful 
+                completion of a course focused on Java programming language. This comprehensive 
+                program covers fundamental concepts, advanced techniques, and practical applications of Java, 
+                equipping individuals with the skills and knowledge needed to excel in Java development.</p>
+              <!-- Additional certificate information here -->
+            </div>
+          </div>
+          <!-- Certificate 4 -->
+          <div class="certificate">
+            <div class="certificate-overlay">
+              <a href="https://dtmvamahs40ux.cloudfront.net/ComplementaryCourseCertificate/4398047/original/Sanele_Mlondi_Mkhabela20240325-74-3uqb8n.jpg" target="_blank">View Certificate</a>
+            </div>
+            <img src="Certificates/P-Basics.jpg" alt="Certificate 1">
+            <div class="certificate-info">
+              <h2>Programming Basics</h2>
+              <p>certificate obtained from Great Learning highlights the fundamental 
+                programming concepts and techniques. Provides a solid foundation in programming logic, 
+                problem-solving methodologies, and algorithmic thinking. gained essential skills applicable 
+                across various programming languages and environments.</p>
+              <!-- Additional certificate information here -->
+            </div>
+          </div>
+          <!-- Certificate 5 -->
+          <div class="certificate">
+            <div class="certificate-overlay">
+              <a href="https://drive.google.com/file/d/14T7NYRfZcC8DSS0K_moIP-NuChUuvqIJ/view?usp=sharing" target="_blank">View Certificate</a>
+            </div>
+            <img src="Certificates/AI-CodSoft.png" alt="Certificate 1">
+            <div class="certificate-info">
+              <h2>Artificial Intelligence</h2>
+              <p>
+                AI certificate from CodSoft, It represents 
+                dedication and passion for mastering AI. I honed skills in 
+                development, problem-solving, and collaboration. I'm excited to apply my knowledge to future challenges in the 
+                field. This achievement is a stepping stone towards contributing meaningfully to AI 
+                development. I'm ready to embark on the next phase of my AI journey with confidence and enthusiasm.</p>
+              <!-- Additional certificate information here -->
+            </div>
+          </div>
+          <!-- Certificate 6 -->
+          <div class="certificate">
+            <div class="certificate-overlay">
+              <a target="_blank">Coming Soon</a>
+            </div>
+            <img src="Certificates/AI-CodSoft.png" alt="Certificate 1">
+            <div class="certificate-info">
+              <h2>Coming Soon</h2>
+              <p>
+                Continuously committed to expanding my skill set, I'm actively pursuing additional 
+                short courses and internships to enhance my expertise. These endeavors not only afford me 
+                the opportunity to earn certificates but also provide invaluable hands-on experience, 
+                enabling me to delve deeper into programming and explore a diverse array of languages. 
+                </p>
+              <!-- Additional certificate information here -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>      
+  </section>
+  
 
-    <!-- Back Home Button -->
-    <div class="back-home">
-        <a href="index.html">Back to Home</a>
-    </div>
+    <br>
+   <!-- ==========================================
+                    Footer
+    =========================================== -->
+    <footer class="footer">
+        <div class="footer-text">
+          <p>Copyright &copy; 2022 by CodeWaveKings | All Rights Reserved.</p>
+        </div>
+  
+        <div class="footer-iconTop">
+          <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+      </footer>
+  
+      <!-- ==========================================
+                    Scroll Reveal
+      =========================================== -->
+      <script src="https://unpkg.com/scrollreveal"></script>
+  
+      <!-- ==========================================
+                     Typed Js
+      =========================================== -->
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  
+      <!-- ==========================================
+                    Custom Js
+      =========================================== -->
+      <script src="home.js"></script>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 CodeWaveKings. All Rights Reserved.</p>
-    </footer>
 
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemen = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemen.style.right = "0";
+        }
+        function closemenu(){
+            sidemen.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyIdntLa7V2PJ-Dn6TDGzQswMeUG8ba7GdEZbycDIfvYlc9y0BLF9wG77jeAwFxUtfd/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 </html>
