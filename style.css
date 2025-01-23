@@ -139,22 +139,23 @@ body {
 .view-gallery-link {
     display: inline-block;
     text-decoration: none;
-    color: #333; /* Neutral, professional color */
-    font-size: 1.5rem; /* Larger font size for emphasis */
-    font-weight: bold; /* Make the text stand out */
-    padding: 10px 20px; /* Add padding for a button-like appearance */
-    border: 2px solid #007BFF; /* Add a border for a professional look */
-    border-radius: 8px; /* Rounded corners for modern design */
-    background-color: #f9f9f9; /* Subtle background color */
-    transition: all 0.3s ease; /* Smooth hover effect */
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px; 
+    border: 2px solid #007BFF; 
+    border-radius: 8px; 
+    background-color: #f9f9f9; 
+    transition: all 0.3s ease; 
 }
 
 .view-gallery-link:hover {
-    background-color: #007BFF; /* Change background color on hover */
-    color: #fff; /* Text color changes to white */
-    border-color: #0056b3; /* Darker border on hover */
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    background-color: #007BFF;
+    color: #fff;
+    border-color: #0056b3;
+    transform: scale(1.05);
 }
+
 /*----------------services----------------*/
 #services
 {
