@@ -136,6 +136,14 @@ body {
 {
     display: block;
 }
+.view-gallery-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.view-gallery-link:hover {
+    text-decoration: underline; /* Optional: Add underline effect on hover */
+}
 /*----------------services----------------*/
 #services
 {
