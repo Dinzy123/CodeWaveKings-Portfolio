@@ -118,7 +118,7 @@ section {
 }
 
 .home-img img {
-  width: 30vw;
+  width: 15vw;
   height: auto; /* Keep aspect ratio if width is controlling size */
   object-fit: cover;
   border-radius: 50%; /* This makes the image circular/oval */
