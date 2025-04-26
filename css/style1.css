@@ -112,17 +112,21 @@ section {
   align-items: center;
 }
 .home-img {
-  /* margin-left: 800px;
-  margin-top: -480px; */
   margin-top: 5rem;
   margin-right: -5rem;
   z-index: -1;
 }
+
 .home-img img {
   width: 30vw;
+  height: auto; /* Keep aspect ratio if width is controlling size */
+  object-fit: cover;
+  border-radius: 50%; /* This makes the image circular/oval */
   animation: floatImage 4s ease-in-out infinite;
   -webkit-animation: floatImage 4s ease-in-out infinite;
 }
+
+
 @keyframes floatImage {
   0% {
     transform: translateY(0);
